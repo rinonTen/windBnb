@@ -1,0 +1,43 @@
+.PlaceList {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.list-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  margin-top: 60px;
+  margin-bottom: 15px;
+}
+
+.number-stays {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+}
+
+.main-title {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 29px;
+  color: #000000;
+}
+
+.main-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+@media(max-width: 768px) {
+  .list-header {
+    margin-top: 40px;
+    margin-bottom: 5px;
+  }
+  .main-title {
+    font-size: 18px;
+  }
+}
