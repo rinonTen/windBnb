@@ -1,16 +1,8 @@
 .App {
-  margin: 22px 11px;
+  padding: 22px 11px;
   position: relative;
 }
-/* 
-@media (max-width: 768px) {
-  .App {
-    margin: 30px 40px;
-  }
-}
 
-@media (max-width: 450px) {
-  .App {
-    margin: 20px 20px;
-  }
-} */
+.App.bg_changed {
+  background: rgba(79, 79, 79, 0.4);
+}

@@ -3,11 +3,10 @@ import logo from '../../challenge/logo.svg'
 import Options from './Options'
 import './Header.css'
 
-const Header = (props) => {
+const Header = ({ search, fullHeader, setFullHeader }) => {
   const placeOptions = ['Helsinki', 'Turku', 'Oulu', 'Vaasa']
   const [place, setPlace] = useState('')
   const [numberPeople, setNumberPeople] = useState('Add people')
-  const [fullHeader, setFullHeader] = useState(false)
   const [placeActive, setPlaceActive] = useState(false)
   const [peopleActive, setPeopleActive] = useState(false)
   const [adultsQuantity, setAdultsQuantity] = useState(0)
@@ -19,7 +18,7 @@ const Header = (props) => {
     searchData.place = place
     searchData.people = numberPeople
     setFullHeader(false)
-    props.search(searchData)
+    search(searchData)
   }
 
   const handleActive = (event) => {
